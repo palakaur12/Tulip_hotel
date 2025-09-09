@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+  
+}
+
+.hotel-section {
+  position: relative;
+  height: 100vh;
+  background: url('bg.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f9f3e9;
+}
+.hotel-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.hotel-text {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+.hotel-text h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.hotel-text p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+.book-button {
+  padding: 14px 28px;
+  background: #08263b;
+
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-button:hover {
+  background: #a85708;
+}
+
+
+
+.about-section {
+  padding: 40px;
+  background: #fffefe;
+  font-family: Arial, sans-serif;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal halves */
+  gap: 40px;
+  align-items: start;
+}
+.section-title{
+    color: rgb(41, 6, 9);
+}
+
+.about-us p {
+  line-height: 1.6;
+}
+.about-us h2{
+    color: rgb(66, 45, 47);
+}
+.know-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: rgb(88, 53, 54);
+  border-radius: 5%;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: bold;
+}
+.know-button:hover {
+  background: rgb(235, 204, 235);
+  color: rgb(0, 0, 0);
+}
+
+
+.facilities-section ul {
+  list-style: none;
+  padding: 0;
+}
+.facilities-section h2{
+    color: rgb(66, 45, 47);
+}
+.facilities-section li {
+  margin: 10px 0;
+  font-size: 16px;
+
+}
+.facilities-section i {
+  margin-right: 10px;
+  color: rgb(82, 56, 56);
+}
+/* rooms css */
+.room-container{
+  background-color: antiquewhite;
+}
+.rooms-section {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+.room-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal halves */
+  gap: 40px;
+  align-items: start;
+}
+
+.section-room {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #8b4141;
+}
+.room-img img {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+.room-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  text-align: center;      /* center text lines */
+  height: 100%;   
+}
+.room-content h3 {
+  margin-bottom: 50px;
+  color: #9A3F3F ;
+  
+  
+}
+.room-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #333;
+   max-width: 500px; 
+}
+.help-button {
+  text-align: center;
+  margin-top: 30px;
+
+
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+}
+.help-button button {
+  padding: 12px 25px;
+  background: #081e2b;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+
+}
+
+.help-button button:hover {
+  background: #88ade4;
+  color: rgb(0, 0, 0);
+}
+/* gallerryy */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.gallery-container img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.3s;
+  height: 600px;        /* fixed equal height */
+  object-fit: cover;
+}
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  margin: auto;
+}
+
+.booking {
+  background: #f8f8f8; /* light grey to separate from gallery */
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.booking-form input, .booking-form select {
+   padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+}
+.booking-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.booking-form button {
+  padding: 14px;
+  background: #6f2f2f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.booking-form button:hover {
+  background: #afa3a3;
+  color: rgb(53, 18, 18);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.room-type-container{
+     width: 50%;
+   align-items: center;
+   flex-direction: row-reverse;
+  
+}
+
+    .container {
+      display: flex; /* put image and text side by side */
+      align-items: center; /* vertically center */
+      gap: 200px; /* space between image and text */
+      padding: 70px;
+    }
+    .container img {
+      max-width: 100%;
+    }
+    .content {
+      max-width: 500px;
+    }
+  
+form{
+    border: 2px solid gray;
+    width: max-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px 0px;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    font-size: larger;
+}
+input{
+    font-size: larger;
+    padding: 5px;
+}
+@media  only screen and (max-width: 500px) {
+    .hotel-text > h1{
+    font-size: 20px;
+}
+p{
+    font-size: 10px;
+}
+
+    
+}
+@media  only screen and (min-width: 501px) and ( max-width: 980px) {
+    .hotel-text > h1{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+    
+}
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a4d90b58a7.js" crossorigin="anonymous"></script>
+     
+
+</head>
+
+<body>
+  
+    <section class="hotel-section">
+  <div class="overlay"></div>
+  <div class="hotel-text">
+    <h1>Welcome to Tulip Hotel</h1>
+    <p>We provide rooms at a good price along with great amenities to make your experience awesome</p>
+    <button id="scrollBtn" onclick="location.href='#bookingForm'" class="book-button">Book Now</button>
+  </div>
+</section>
+
+
+
+
+<section class="about-section">
+  <h1 class="section-title">About Us</h1>
+  
+  <div class="about-container">
+
+    <div class="about-us">
+      <h2>Welcome to Tulip Hotel</h2>
+      <p>
+        We are here to give you a comfortable and peaceful stay. Our hotel offers 
+        clean rooms, tasty food, and friendly service so you can feel at home. 
+        Whether you are on a family trip, business visit, or just relaxing, 
+        <q>Tulip Hotel</q> is the right place for you. 
+        <br><br>
+        We believe in simple luxury – good rooms, good food, and warm hospitality – 
+        all at a fair price. Your comfort and happiness are always our first priority.
+      </p>
+      <button class="know-button">Know More...</button>
+    </div>
+
+    <!-- Facilities -->
+    <div class="facilities-section">
+      <h2>Facilities at Tulip Hotel</h2>
+      <ul>
+        <li><i class="fa-solid fa-tower-broadcast"></i> 24/7 Reception</li>
+        <li><i class="fa-solid fa-wifi"></i> Free WiFi</li>
+        <li><i class="fa-solid fa-dumbbell"></i> Gym</li>
+        <li><i class="fa-solid fa-person-swimming"></i> Swimming Pool</li>
+        <li><i class="fa-solid fa-mug-saucer"></i> Cafeteria</li>
+        <li><i class="fa-solid fa-utensils"></i> Restaurant & Dining</li>
+        <li><i class="fa-solid fa-car"></i> Parking Space</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="rooms-section">
+  <h1 class="section-room">TYPE OF ROOMS</h1>
+  
+  <div class="room-container">
+    <!-- Left Image -->
+    <div class="room-img">
+      <img src="room.jpg" alt="room image">
+    </div>
+
+    <!-- Right Content -->
+    <div class="room-content">
+      <h3>Single Occupancy Room</h3>
+      <p>
+        A comfortable room made for one guest. Best for business travelers or solo trips, 
+        with a single bed, private bathroom, and essential facilities.
+      </p>
+
+      <h3>Family Room</h3>
+      <p>
+        Spacious and perfect for families. Offers multiple beds, sitting space, 
+        and modern amenities so everyone can stay together with comfort.
+      </p>
+
+      <h3>Duplex Room</h3>
+      <p>
+        A stylish two-level room with separate living and sleeping areas. 
+        Ideal for groups or long stays, giving extra privacy and luxury.
+      </p>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <div class="help-button">
+    <button id="helpBtn">Need Help?</button>
+  </div>
+</section>
+<section class="gallery-section">
+  <h1 class="section-title">Our Gallery</h1>
+  <div class="gallery-container">
+    <img src="room1.jpg" alt="Room 1">
+    <img src="pool.jpg" alt="Swimming Pool">
+    <img src="dining.jpg" alt="Dining Area">
+    <img src="lobby.jpg" alt="Lobby">
+  </div>
+</section>
+
+
+
+<!-- Booking form -->
+<section class="booking" id="bookingForm">
+  <h1 class="section-title">Book Your Stay</h1>
+  <form id="stayForm" class="booking-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="date" id="checkin" required>
+    <input type="date" id="checkout" required>
+    <select id="roomType" required>
+      <option value="">Select Room</option>
+      <option value="single">Single Room</option>
+      <option value="family">Family Room</option>
+      <option value="duplex">Duplex Room</option>
+    </select>
+    <button id="submitBtn" type="submit">Book Now</button>
+  </form>
+
+  <!-- message area -->
+  <p id="formMessage"></p>
+</section>
+
+
+
+  <script src="script.js"></script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
